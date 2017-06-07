@@ -1,0 +1,1 @@
+go test go-coding-dojo/coffeequeue/solution

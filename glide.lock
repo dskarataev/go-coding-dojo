@@ -1,0 +1,14 @@
+hash: c36eca645258c99c54c6189b43a7204ec8c63870e112f110ad8b879675e01f03
+updated: 2017-06-07T14:01:14.57469726+07:00
+imports: []
+testImports:
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - mock
+- name: github.com/tehleach/mockery
+  version: 886cd116edf5fef19cc2ac224a3f1feadd9f94bd
+  subpackages:
+  - '...'
+- name: gopkg.in/check.v1
+  version: 20d25e2804050c1cd24a7eea1e7a6447dd0e74ec
