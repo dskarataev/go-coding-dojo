@@ -16,6 +16,10 @@ func RunCoffeeWorker(queue IQueue) {
 		// get the next order from the queue
 		order := queue.Get()
 
+		if order == nil {
+			continue
+		}
+
 		// wait for preparing coffee
 		time.Sleep(time.Second * time.Duration(order.GetDelay()))
 
