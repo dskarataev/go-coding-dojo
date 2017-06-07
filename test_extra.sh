@@ -1,0 +1,1 @@
+go test -bench=. -benchmem go-coding-dojo/coffeequeue/test

@@ -1,0 +1,3 @@
+#!/bin/sh
+glide install
+go generate ./coffeequeue/...
