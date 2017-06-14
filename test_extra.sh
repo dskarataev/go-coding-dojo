@@ -1,1 +1,1 @@
-go test -race -bench=. -benchmem -benchtime=3s go-coding-dojo/coffeequeue/test
+go test -v -race -bench=. -benchmem -benchtime=3s go-coding-dojo/coffeequeue/test

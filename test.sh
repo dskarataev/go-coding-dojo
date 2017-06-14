@@ -1,1 +1,1 @@
-go test go-coding-dojo/coffeequeue/solution
+go test -v go-coding-dojo/coffeequeue/solution
