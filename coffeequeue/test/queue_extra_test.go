@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"testing"
 
-	//. "gopkg.in/check.v1"
+	. "gopkg.in/check.v1"
 )
 
 const (
@@ -15,13 +15,16 @@ const (
 )
 
 // TODO: check on next step
-//func (extraTestSuite) TestQueueRaceCondition(c *C) {
-//	queue := solution.NewQueue()
-//	order := core.NewOrder(core.OrderNameEspresso, "Test Customer")
-//
-//	go queue.Put(order)
-//	go queue.Get()
-//}
+func (extraTestSuite) TestQueueRaceCondition(c *C) {
+	queue := solution.NewQueue()
+	order := core.NewOrder(core.OrderNameEspresso, "Test Customer")
+
+	go queue.Put(order)
+	go queue.Put(order)
+
+	go queue.Get()
+	go queue.Get()
+}
 
 func BenchmarkQueuePut(b *testing.B) {
 	queue := solution.NewQueue()
